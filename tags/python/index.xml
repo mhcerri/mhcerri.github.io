@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/python/</link>
+    <description>Recent content in Python on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Fri, 23 Oct 2015 00:15:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python auto completion with Vim</title>
+      <link>https://mhcerri.github.io/posts/python-auto-complete-with-vim/</link>
+      <pubDate>Fri, 23 Oct 2015 00:15:00 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/python-auto-complete-with-vim/</guid>
+      <description>Python auto completion in Vim is very well supported by Jedi.
+However, to be fully functional Jedi and Vim should used the same python version.
+The first step is to install the Vim with python3 support:
+pacman -S vim-python3  And then install the Jedi plugin for Vim:
+pacman -S python-jedi  That&amp;rsquo;s all. Now open a .py file in Vim and use Ctrl+Space to get the completion options.</description>
+    </item>
+    
+    <item>
+      <title>How to move a Python virtualenv to another directory</title>
+      <link>https://mhcerri.github.io/posts/how-to-move-a-python-virtualenv-to-another-directory/</link>
+      <pubDate>Tue, 04 Aug 2015 08:53:58 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/how-to-move-a-python-virtualenv-to-another-directory/</guid>
+      <description>Every python script installed in the ./bin/ directory of a Python virtualenv installation has a shebang pointing to the absolute path of the python binary in the virtualenv. That&amp;rsquo;s important to assure that those scripts will only be executed with the correct python binary.
+However, when a Python virtualenv is moved to another directory all those scripts end up outdated.
+To fix that, all that&amp;rsquo;s necessary to do is:
+virtualenv --relocatable .</description>
+    </item>
+    
+    <item>
+      <title>Installing Python from sources</title>
+      <link>https://mhcerri.github.io/posts/installing-python-from-sources/</link>
+      <pubDate>Tue, 04 Aug 2015 08:48:23 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/installing-python-from-sources/</guid>
+      <description>Python is present in a large number of distros today and in fact most distros have at least one or more core components that are written or extensible using Python.
+That is a good thing in the way that you can write Python application without any need to worry if Python will be available or not for ditro A or distro B. But it also creates some problems.
+Not all python modules are available via the distro package manager There are thousands of modules and libraries available for Python, several of them are constantly updated.</description>
+    </item>
+    
+  </channel>
+</rss>

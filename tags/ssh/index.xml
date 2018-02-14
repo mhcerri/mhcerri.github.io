@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ssh on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/ssh/</link>
+    <description>Recent content in Ssh on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 03 Oct 2017 10:47:54 -0300</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to create a docker container with SSH</title>
+      <link>https://mhcerri.github.io/posts/ssh-docker-container/</link>
+      <pubDate>Tue, 03 Oct 2017 10:47:54 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/ssh-docker-container/</guid>
+      <description>That also starts automatically with dockerd.
+Steps $ cat &amp;gt; Dockerfile &amp;lt;&amp;lt; &#39;END&#39; FROM ubuntu:16.04 RUN apt-get update &amp;amp;&amp;amp; apt-get install -y openssh-server RUN mkdir /var/run/sshd RUN echo &#39;root:root&#39; | chpasswd RUN sed -i &#39;s/PermitRootLogin prohibit-password/PermitRootLogin yes/&#39; /etc/ssh/sshd_config # SSH login fix. Otherwise user is kicked off after login RUN sed &#39;s@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g&#39; -i /etc/pam.d/sshd ENV NOTVISIBLE &amp;quot;in users profile&amp;quot; RUN echo &amp;quot;export VISIBLE=now&amp;quot; &amp;gt;&amp;gt; /etc/profile EXPOSE 22 CMD [&amp;quot;/usr/sbin/sshd&amp;quot;, &amp;quot;-D&amp;quot;] END $ docker build -t ssh .</description>
+    </item>
+    
+    <item>
+      <title>Restricting user for SSH port forwarding</title>
+      <link>https://mhcerri.github.io/posts/restricting-user-for-ssh-port-forwarding/</link>
+      <pubDate>Mon, 14 Dec 2015 09:42:46 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/restricting-user-for-ssh-port-forwarding/</guid>
+      <description>This is a very basic configuration for the SSH daemon to restrict a user to be used only for port forwarding with public key authentication. These steps does not cover any form of chroot or sandbox.
+First step: create a user and his base home directory structure:
+useradd dummy mkdir -p /home/dummy/.ssh On the remote host, generate a pair of keys if needed:
+ssh-keygen -b 4096 -t rsa Copy the file id_rsa.</description>
+    </item>
+    
+  </channel>
+</rss>

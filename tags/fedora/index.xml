@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fedora on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/fedora/</link>
+    <description>Recent content in Fedora on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 04 Aug 2015 09:11:01 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to fix load 1.0 issue on MK802</title>
+      <link>https://mhcerri.github.io/posts/how-to-fix-load--issue-on-mk/</link>
+      <pubDate>Tue, 04 Aug 2015 09:11:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/how-to-fix-load--issue-on-mk/</guid>
+      <description>Note: I&amp;rsquo;m currently using a Raspberry Pi 2 and Arch Linux ARM
+The load of my MK802 running Fedora 20 was constantly above 1.0. Checking the state of the processes I found:
+$ ps -eo pid,state,cmd | awk &amp;#39;$2 != &amp;#34;S&amp;#34; &amp;amp;&amp;amp; $2 != &amp;#34;R&amp;#34;&amp;#39; 34 D [usb-storage] After searching on Google, I found that it seems to be a problem related to the OTG port. To fix we need to change some parameters in the script.</description>
+    </item>
+    
+    <item>
+      <title>Mini home server with MK802</title>
+      <link>https://mhcerri.github.io/posts/mini-home-server-with-mk/</link>
+      <pubDate>Tue, 04 Aug 2015 09:02:39 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/mini-home-server-with-mk/</guid>
+      <description>Note: I&amp;rsquo;m currently using a Raspberry Pi 2 and Arch Linux ARM
+My first attempt to set up a mini home server was using a Raspberry Pi as a torrent and a DLNA server running with an external HDD. Unfortunately it had a lot of USB related issues that caused the HDD and the network to disconnect very often. I tried several workarounds, from tweaks in the boot-loader to fixes in the kernel without success.</description>
+    </item>
+    
+    <item>
+      <title>Installing Python from sources</title>
+      <link>https://mhcerri.github.io/posts/installing-python-from-sources/</link>
+      <pubDate>Tue, 04 Aug 2015 08:48:23 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/installing-python-from-sources/</guid>
+      <description>Python is present in a large number of distros today and in fact most distros have at least one or more core components that are written or extensible using Python.
+That is a good thing in the way that you can write Python application without any need to worry if Python will be available or not for ditro A or distro B. But it also creates some problems.
+Not all python modules are available via the distro package manager There are thousands of modules and libraries available for Python, several of them are constantly updated.</description>
+    </item>
+    
+  </channel>
+</rss>

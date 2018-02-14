@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualenv on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/virtualenv/</link>
+    <description>Recent content in Virtualenv on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 04 Aug 2015 08:53:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/virtualenv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to move a Python virtualenv to another directory</title>
+      <link>https://mhcerri.github.io/posts/how-to-move-a-python-virtualenv-to-another-directory/</link>
+      <pubDate>Tue, 04 Aug 2015 08:53:58 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/how-to-move-a-python-virtualenv-to-another-directory/</guid>
+      <description>Every python script installed in the ./bin/ directory of a Python virtualenv installation has a shebang pointing to the absolute path of the python binary in the virtualenv. That&amp;rsquo;s important to assure that those scripts will only be executed with the correct python binary.
+However, when a Python virtualenv is moved to another directory all those scripts end up outdated.
+To fix that, all that&amp;rsquo;s necessary to do is:
+virtualenv --relocatable .</description>
+    </item>
+    
+  </channel>
+</rss>

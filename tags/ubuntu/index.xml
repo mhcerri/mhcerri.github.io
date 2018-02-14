@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 23 Jan 2018 13:58:17 -0200</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debugging the Ubuntu kernel with GDB and QEMU</title>
+      <link>https://mhcerri.github.io/posts/debugging-the-ubuntu-kernel-with-gdb-and-qemu/</link>
+      <pubDate>Tue, 23 Jan 2018 13:58:17 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/debugging-the-ubuntu-kernel-with-gdb-and-qemu/</guid>
+      <description>This tutorial focuses on the practical aspects of preparing an Ubuntu libvirt virtual machine to debug the ubuntu kernel.
+Preparing the VM Create an Ubuntu VM using uvt-kvm or virt-manager with the desired configurations.
+On the host machine, edit the VM domain XML:
+virsh edit &amp;quot;$GUESTNAME&amp;quot;  Replacing the first line:
+&amp;lt;domain type=&#39;kvm&#39;&amp;gt;  With:
+&amp;lt;domain type=&#39;kvm&#39; xmlns:qemu=&#39;http://libvirt.org/schemas/domain/qemu/1.0&#39;&amp;gt; &amp;lt;qemu:commandline&amp;gt; &amp;lt;qemu:arg value=&#39;-s&#39;/&amp;gt; &amp;lt;/qemu:commandline&amp;gt;   -s tells QEMU to start a GDB server on port 1234 (it&amp;rsquo;s equivalent to -gdb tcp::1234).</description>
+    </item>
+    
+    <item>
+      <title>Testing with autopkgtest</title>
+      <link>https://mhcerri.github.io/posts/autopkgtest/</link>
+      <pubDate>Wed, 13 Dec 2017 15:39:52 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/autopkgtest/</guid>
+      <description>From apt show autopkgtest:
+Package: autopkgtest ... Description: automatic as-installed testing for Debian packages autopkgtest runs tests on binary packages. The tests are run on the package as installed on a testbed system (which may be found via a virtualisation or containment system). The tests are expected to be supplied in the corresponding Debian source package. . See adt-run(1) and /usr/share/doc/autopkgtest. Depending on which virtualization server you want to use, you need to install additional packages (schroot, lxc, lxd, or qemu-system) .</description>
+    </item>
+    
+    <item>
+      <title>How to unpack a debian source package</title>
+      <link>https://mhcerri.github.io/posts/how-to-unpack-a-debian-source-package/</link>
+      <pubDate>Thu, 29 Jun 2017 09:13:29 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/how-to-unpack-a-debian-source-package/</guid>
+      <description>There are two kinds of Debian source packages: old ones and new ones.
+A. Old ones look like this:
+ hello-1.3-4.tar.gz hello-1.3-4.diff.gz  You unpack them by untaring the .tar.gz. There is NO need to apply the diff.
+B. New ones look like this:
+ hello_1.3-11.dsc hello_1.3-11.diff.gz hello_1.3-11.orig.tar.gz - note the `.orig` part  Here you MUST use dpkg-source or apply the diff manually - see below.
+If you have dpkg-source you should put the files in the same directory and type dpkg-source -x &amp;lt;whatever&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Creating VMs with uvtool</title>
+      <link>https://mhcerri.github.io/posts/creating-vms-with-uvtool/</link>
+      <pubDate>Fri, 17 Mar 2017 16:43:17 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/creating-vms-with-uvtool/</guid>
+      <description>Use uvtool to create a machine:
+sudo apt install uvtool  Download cloud images with
+uvt-simplestreams-libvirt --verbose sync release=xenial arch=amd64  Images and meta-data are located under /var/lib/uvtool/libvirt.
+uvt-kvm create --cpu 2 --memory 2048 testvm release=xenial arch=amd64  testvm is the name of the VM. You can use that for various other commands:
+uvt-kvm wait --insecure testvm uvt-kvm ip testvm uvt-kvm ssh --insecure testvm  The --insecure is needed for ssh to disable host key verification.</description>
+    </item>
+    
+    <item>
+      <title>Debian packaging generic kernels</title>
+      <link>https://mhcerri.github.io/posts/upstream-kernel-deb/</link>
+      <pubDate>Mon, 13 Mar 2017 10:09:44 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/upstream-kernel-deb/</guid>
+      <description>Copy a your .config file to the kernel directory and run:
+make deb-pkg -j $(getconf _NPROCESSORS_ONLN) LOCALVERSION=-custom KDEB_PKGVERSION=$(make kernelversion)-1   Set CONFIG_DEBUG_INFO=n if you want to avoid to build the debug symbol package.
+ Cross compiling Install the target cross compile toolchain and add the following variable to the make command:
+ARCH=&amp;lt;arch&amp;gt; CROSS_COMPILE=/usr/bin/&amp;lt;toolchain-arch&amp;gt;-linux-gnu-   &amp;lt;arch&amp;gt; should match one directory in ./arch/. &amp;lt;toolchain-arch&amp;gt; is the prefix of the cross compilation tools.</description>
+    </item>
+    
+    <item>
+      <title>Creating a DKMS deb package</title>
+      <link>https://mhcerri.github.io/posts/creating-a-dkms-deb/</link>
+      <pubDate>Tue, 21 Feb 2017 09:12:00 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/creating-a-dkms-deb/</guid>
+      <description>All the steps to create a deb package with a DKMS module. It&amp;rsquo;s assumes a native deb package for simplicity.
+Preparation  Install tools for deb packaging:
+apt install devscripts dh # TODO check it
+ Install DKMS:
+apt install dkms
+  Generate a base debian package By default, dkms mkdsc uses the systems directories when creating and building a DKMS package.
+To override that, create a file pointing to your local directory:</description>
+    </item>
+    
+  </channel>
+</rss>

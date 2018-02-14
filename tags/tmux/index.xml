@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tmux on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/tmux/</link>
+    <description>Recent content in Tmux on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Fri, 23 Oct 2015 00:31:45 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building tmux statically</title>
+      <link>https://mhcerri.github.io/posts/building-tmux-statically/</link>
+      <pubDate>Fri, 23 Oct 2015 00:31:45 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/building-tmux-statically/</guid>
+      <description>Follow the steps:
+yum groupinstall &amp;#39;Development tools&amp;#39; yum install glibc-static # or yum install compat-glibc mkdir tmux cd tmux libevent curl -O -L &amp;#39;https://github.com/libevent/libevent/releases/download/release-2.0.22-stable/libevent-2.0.22-stable.tar.gz&amp;#39; tar xf libevent-2.0.22-stable.tar.gz cd libevent-2.0.22-stable/ ./configure --prefix=/tmp/local --disable-shared make -j4 make install cd .. ncurses curl -O -L &amp;#39;ftp://ftp.gnu.org/gnu/ncurses/ncurses-5.9.tar.gz&amp;#39; tar xf ncurses-5.9.tar.gz Apply the following patch or edit the file ./ncurses-5.9.orig/ncurses/base/MKlib_gen.sh manually:
+--- ./ncurses-5.9.orig/ncurses/base/MKlib_gen.sh	2011-01-22 17:47:29.000000000 -0200 +++ ./ncurses-5.9/ncurses/base/MKlib_gen.sh	2015-09-21 14:01:10.438925379 -0300 @@ -66,6 +66,24 @@ preprocessor=&amp;#34;$1 -DNCURSES_INTERNALS -I.</description>
+    </item>
+    
+  </channel>
+</rss>

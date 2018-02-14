@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lxc on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/lxc/</link>
+    <description>Recent content in Lxc on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Mon, 07 Dec 2015 11:43:55 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/lxc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux containers 101</title>
+      <link>https://mhcerri.github.io/posts/linux-containers-/</link>
+      <pubDate>Mon, 07 Dec 2015 11:43:55 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/linux-containers-/</guid>
+      <description>Linux containers (LXC) is a lightweight method of virtualization at the operating system level. In a sentence it&amp;rsquo;s a chroot on steroids providing resources (CPU, memory, etc) isolation thanks to cgroups.
+Install the necessary packages To start with Linux containers, install the following packages:
+# On ArchLinux pacman -S lxc arch-install-scripts lxc-checkconfig # On Fedora dnf install lxc lxc-extra lxc-templates Configure the network In this example, containers will be created by default with a ethernet pair device connected to a bridge.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fs on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/fs/</link>
+    <description>Recent content in Fs on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Thu, 09 Mar 2017 11:04:16 -0300</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/fs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inspecting file systems and block devices</title>
+      <link>https://mhcerri.github.io/posts/inspecting-fs-and-block-devices/</link>
+      <pubDate>Thu, 09 Mar 2017 11:04:16 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/inspecting-fs-and-block-devices/</guid>
+      <description>File system information sudo dumpe2fs /dev/&amp;lt;device&amp;gt;  Or for size information:
+sudo dumpe2fs /dev/&amp;lt;device&amp;gt; | grep size  Physical blocks of a file sudo PAGER=cat debugfs -R &#39;stat &amp;lt;file&amp;gt;&#39; /dev/&amp;lt;device&amp;gt;  Notes: -&amp;lt;file&amp;gt; must be relative to the file system. --R is used to give a direct command. Omit -R &#39;...&#39; to enter interactive mode. -PAGER=cat ensures that no pager (as less) is used.
+ Check man debugfs for additional commands.</description>
+    </item>
+    
+  </channel>
+</rss>

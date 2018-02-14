@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/vim/</link>
+    <description>Recent content in Vim on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Mon, 14 Dec 2015 14:37:01 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simple Vim snippet for markdown files</title>
+      <link>https://mhcerri.github.io/posts/simple-vim-snippet-for-markdown-files/</link>
+      <pubDate>Mon, 14 Dec 2015 14:37:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/simple-vim-snippet-for-markdown-files/</guid>
+      <description>In markdown, fenced code blocks are handy because they allow you to explicitly define the language to be used to highlight your code.
+The only problem is that it&amp;rsquo;s a bit painful to enter the triple backquotes (```) with a non US keyboard.
+To make it easier to write markdown documents, I use the following config in my ~/.vimrc:
+au BufNewFile,BufRead *.md iabbrev &amp;#39;&amp;#39;&amp;#39; ``` That way every time I type triple quotes (&#39;&#39;&#39;) followed by a new line or a space it&amp;rsquo;s replaced by the triple backquotes.</description>
+    </item>
+    
+    <item>
+      <title>Python auto completion with Vim</title>
+      <link>https://mhcerri.github.io/posts/python-auto-complete-with-vim/</link>
+      <pubDate>Fri, 23 Oct 2015 00:15:00 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/python-auto-complete-with-vim/</guid>
+      <description>Python auto completion in Vim is very well supported by Jedi.
+However, to be fully functional Jedi and Vim should used the same python version.
+The first step is to install the Vim with python3 support:
+pacman -S vim-python3  And then install the Jedi plugin for Vim:
+pacman -S python-jedi  That&amp;rsquo;s all. Now open a .py file in Vim and use Ctrl+Space to get the completion options.</description>
+    </item>
+    
+  </channel>
+</rss>

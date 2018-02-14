@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/nginx/</link>
+    <description>Recent content in Nginx on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Wed, 02 Dec 2015 11:06:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Running nginx as non-root user</title>
+      <link>https://mhcerri.github.io/posts/running-nginx-as-non-root-user/</link>
+      <pubDate>Wed, 02 Dec 2015 11:06:58 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/running-nginx-as-non-root-user/</guid>
+      <description>This is a simple recipe to run nginx without privileges.
+Create a configuration file with a simple proxy setup and redirecting most of the needed files away from the default locations:
+nginx_dev.conf:
+pid /tmp/nginx_dev/nginx.pid; error_log /tmp/nginx_dev/error.log; worker_processes 1; events { worker_connections 1024; } http { root /tmp/nginx_dev/; access_log /tmp/nginx_dev/access.log; client_body_temp_path /tmp/nginx_dev/client_body/; fastcgi_temp_path /tmp/nginx_dev/fastcgi/; proxy_temp_path /tmp/nginx_dev/proxy/; scgi_temp_path /tmp/nginx_dev/scgi/; uwsgi_temp_path /tmp/nginx_dev/uwsgi/; include /etc/nginx/mime.types; server { listen 8001; location / { proxy_pass http://localhost:8000; } location /static/ { alias /tmp/nginx_dev/static/; } } } All the necessary files will be created inside the directory /tmp/nginx_dev, that needs to be created:</description>
+    </item>
+    
+  </channel>
+</rss>

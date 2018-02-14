@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/windows/</link>
+    <description>Recent content in Windows on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Mon, 10 Jul 2017 09:08:35 -0300</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows guests</title>
+      <link>https://mhcerri.github.io/posts/windows-guests/</link>
+      <pubDate>Mon, 10 Jul 2017 09:08:35 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/windows-guests/</guid>
+      <description>Useful links  PDF versions of these links were saved in ./windows-guests/.
+  Install Windows7 on KVM Qemu
+Steps on how to run a Windows guest on KVM with libvirt.
+ QEMU Wiki: Features/GuestAgent
+Details on what is needed to run the QEMU guest agent.
+ Windows Guest Virtual Machines on Red Hat Enterprise Linux 7
+Tips for More Efficiency with Windows Guest Virtual Machines.
+ Tutorial for fixing Error Code ‘0xc004c008′ in Windows 10 and Windows 8.</description>
+    </item>
+    
+  </channel>
+</rss>

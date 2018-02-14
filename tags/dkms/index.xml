@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dkms on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/dkms/</link>
+    <description>Recent content in Dkms on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 21 Feb 2017 09:12:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/dkms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating a DKMS deb package</title>
+      <link>https://mhcerri.github.io/posts/creating-a-dkms-deb/</link>
+      <pubDate>Tue, 21 Feb 2017 09:12:00 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/creating-a-dkms-deb/</guid>
+      <description>All the steps to create a deb package with a DKMS module. It&amp;rsquo;s assumes a native deb package for simplicity.
+Preparation  Install tools for deb packaging:
+apt install devscripts dh # TODO check it
+ Install DKMS:
+apt install dkms
+  Generate a base debian package By default, dkms mkdsc uses the systems directories when creating and building a DKMS package.
+To override that, create a file pointing to your local directory:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/android/</link>
+    <description>Recent content in Android on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 04 Aug 2015 01:40:36 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Use a proxy server on Android</title>
+      <link>https://mhcerri.github.io/posts/use-a-proxy-server-on-android/</link>
+      <pubDate>Tue, 04 Aug 2015 01:40:36 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/use-a-proxy-server-on-android/</guid>
+      <description>When I&amp;rsquo;m connected with my mobile phone to a network that I don&amp;rsquo;t trust or has limited connection, I usually use my remote server as a web proxy to access the internet.
+The setup steps are simple:
+ Install connectbot from F-Droid.
+ Configure an SSH connection to your host with a dynamic port forwarding (SOCKS) on the port 9999.
+ Install firefox for Android.
+ Open the URL about:config on Firefox and change the following configurations:</description>
+    </item>
+    
+  </channel>
+</rss>

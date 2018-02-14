@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pacman on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/pacman/</link>
+    <description>Recent content in Pacman on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Mon, 25 Apr 2016 08:41:15 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/pacman/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic development tools on Arch Linux</title>
+      <link>https://mhcerri.github.io/posts/basic-development-tools-on-arch-linux/</link>
+      <pubDate>Mon, 25 Apr 2016 08:41:15 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/basic-development-tools-on-arch-linux/</guid>
+      <description>Arch Linux has a group of packages containing all the basic development tools.
+To install:
+pacman -S base-devel  This group contains the following packages:
+$ pacman -Sg base-devel base-devel autoconf base-devel automake base-devel binutils base-devel bison base-devel fakeroot base-devel file base-devel findutils base-devel flex base-devel gawk base-devel gcc base-devel gettext base-devel grep base-devel groff base-devel gzip base-devel libtool base-devel m4 base-devel make base-devel pacman base-devel patch base-devel pkg-config base-devel sed base-devel sudo base-devel texinfo base-devel util-linux base-devel which</description>
+    </item>
+    
+    <item>
+      <title>Finding packages that provide a file</title>
+      <link>https://mhcerri.github.io/posts/finding-packages-that-provide-a-file/</link>
+      <pubDate>Sat, 26 Dec 2015 19:30:08 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/finding-packages-that-provide-a-file/</guid>
+      <description>yum has a very useful feature used to find out which package provides an specific file or a file pattern.
+pacman doesn&amp;rsquo;t have such feature but it&amp;rsquo;s possible to get similar information using pkgfile.
+To install pkgfile:
+$ sudo pacman -S pkgfile $ sudo pkgfile --update And to search a package that contains a file, use the command:
+$ pkgfile bash core/bash community/gulp community/nodejs-grunt-cli To get details about each match:</description>
+    </item>
+    
+  </channel>
+</rss>

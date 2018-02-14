@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Idea on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/idea/</link>
+    <description>Recent content in Idea on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 04 Aug 2015 01:35:01 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/idea/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing Scala programs with IntelliJ Idea</title>
+      <link>https://mhcerri.github.io/posts/writing-scala-programs-with-intellij-idea/</link>
+      <pubDate>Tue, 04 Aug 2015 01:35:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/writing-scala-programs-with-intellij-idea/</guid>
+      <description>Download the community version from JetBrains web site or install it from the distro repository:
+# pacman -S intellij-idea-community-edition At the first time it is executed:
+ Customize any configurations.
+ Install the official scala plug-in.
+ Install the additional plug-in scalariform.
+ After the initial setup, go to File -&amp;gt; Settings -&amp;gt; Keymap and search for scalariform and change its shortcut to Ctrl+Shift+S.
+  </description>
+    </item>
+    
+  </channel>
+</rss>

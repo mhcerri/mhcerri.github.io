@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portforwarding on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/portforwarding/</link>
+    <description>Recent content in Portforwarding on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Mon, 14 Dec 2015 09:42:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/portforwarding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Restricting user for SSH port forwarding</title>
+      <link>https://mhcerri.github.io/posts/restricting-user-for-ssh-port-forwarding/</link>
+      <pubDate>Mon, 14 Dec 2015 09:42:46 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/restricting-user-for-ssh-port-forwarding/</guid>
+      <description>This is a very basic configuration for the SSH daemon to restrict a user to be used only for port forwarding with public key authentication. These steps does not cover any form of chroot or sandbox.
+First step: create a user and his base home directory structure:
+useradd dummy mkdir -p /home/dummy/.ssh On the remote host, generate a pair of keys if needed:
+ssh-keygen -b 4096 -t rsa Copy the file id_rsa.</description>
+    </item>
+    
+  </channel>
+</rss>

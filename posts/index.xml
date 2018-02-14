@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/posts/</link>
+    <description>Recent content in Posts on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Sun, 11 Feb 2018 18:31:20 -0200</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up an OpenVPN server</title>
+      <link>https://mhcerri.github.io/posts/openvpn-server/</link>
+      <pubDate>Sun, 11 Feb 2018 18:31:20 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/openvpn-server/</guid>
+      <description>These steps are intended to be used with Arch Linux but can be easily adapted to Ubuntu.
+TODO: Convert to ubuntu/debian.
+ System requirements The kernel needs to be compiled with TUN/TAP support.
+Packages Install the following packages:
+pacman -S openvpn easy-rsa apt-get install openvpn easy-rsa # TODO  For ovpn client files generation:
+aurget -S ovpngen   TODO: how to install ovpngen on Ubuntu.
+ Public Key Infrastructure (PKI)  For security purposes it&amp;rsquo;s recommended to use separate machines for server, client and CA.</description>
+    </item>
+    
+    <item>
+      <title>Debugging the Ubuntu kernel with GDB and QEMU</title>
+      <link>https://mhcerri.github.io/posts/debugging-the-ubuntu-kernel-with-gdb-and-qemu/</link>
+      <pubDate>Tue, 23 Jan 2018 13:58:17 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/debugging-the-ubuntu-kernel-with-gdb-and-qemu/</guid>
+      <description>This tutorial focuses on the practical aspects of preparing an Ubuntu libvirt virtual machine to debug the ubuntu kernel.
+Preparing the VM Create an Ubuntu VM using uvt-kvm or virt-manager with the desired configurations.
+On the host machine, edit the VM domain XML:
+virsh edit &amp;quot;$GUESTNAME&amp;quot;  Replacing the first line:
+&amp;lt;domain type=&#39;kvm&#39;&amp;gt;  With:
+&amp;lt;domain type=&#39;kvm&#39; xmlns:qemu=&#39;http://libvirt.org/schemas/domain/qemu/1.0&#39;&amp;gt; &amp;lt;qemu:commandline&amp;gt; &amp;lt;qemu:arg value=&#39;-s&#39;/&amp;gt; &amp;lt;/qemu:commandline&amp;gt;   -s tells QEMU to start a GDB server on port 1234 (it&amp;rsquo;s equivalent to -gdb tcp::1234).</description>
+    </item>
+    
+    <item>
+      <title>Testing with autopkgtest</title>
+      <link>https://mhcerri.github.io/posts/autopkgtest/</link>
+      <pubDate>Wed, 13 Dec 2017 15:39:52 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/autopkgtest/</guid>
+      <description>From apt show autopkgtest:
+Package: autopkgtest ... Description: automatic as-installed testing for Debian packages autopkgtest runs tests on binary packages. The tests are run on the package as installed on a testbed system (which may be found via a virtualisation or containment system). The tests are expected to be supplied in the corresponding Debian source package. . See adt-run(1) and /usr/share/doc/autopkgtest. Depending on which virtualization server you want to use, you need to install additional packages (schroot, lxc, lxd, or qemu-system) .</description>
+    </item>
+    
+    <item>
+      <title>Hyper-V useful links</title>
+      <link>https://mhcerri.github.io/posts/hyperv-useful-links/</link>
+      <pubDate>Tue, 03 Oct 2017 12:33:43 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/hyperv-useful-links/</guid>
+      <description> Hyper-V Hypervisor Specifications. Nested Virtualization in Azure.  </description>
+    </item>
+    
+    <item>
+      <title>How to create a docker container with SSH</title>
+      <link>https://mhcerri.github.io/posts/ssh-docker-container/</link>
+      <pubDate>Tue, 03 Oct 2017 10:47:54 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/ssh-docker-container/</guid>
+      <description>That also starts automatically with dockerd.
+Steps $ cat &amp;gt; Dockerfile &amp;lt;&amp;lt; &#39;END&#39; FROM ubuntu:16.04 RUN apt-get update &amp;amp;&amp;amp; apt-get install -y openssh-server RUN mkdir /var/run/sshd RUN echo &#39;root:root&#39; | chpasswd RUN sed -i &#39;s/PermitRootLogin prohibit-password/PermitRootLogin yes/&#39; /etc/ssh/sshd_config # SSH login fix. Otherwise user is kicked off after login RUN sed &#39;s@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g&#39; -i /etc/pam.d/sshd ENV NOTVISIBLE &amp;quot;in users profile&amp;quot; RUN echo &amp;quot;export VISIBLE=now&amp;quot; &amp;gt;&amp;gt; /etc/profile EXPOSE 22 CMD [&amp;quot;/usr/sbin/sshd&amp;quot;, &amp;quot;-D&amp;quot;] END $ docker build -t ssh .</description>
+    </item>
+    
+    <item>
+      <title>Download all files listed in a page</title>
+      <link>https://mhcerri.github.io/posts/download-all-files-listed-in-a-page/</link>
+      <pubDate>Thu, 21 Sep 2017 15:10:56 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/download-all-files-listed-in-a-page/</guid>
+      <description>Example:
+wget -A deb -m -E -nd -np -e robots=off &#39;http://kernel.ubuntu.com/~mhcerri/azure/lp1718740-kvm/&#39;  </description>
+    </item>
+    
+    <item>
+      <title>Serial console on VMs</title>
+      <link>https://mhcerri.github.io/posts/serial-console/</link>
+      <pubDate>Wed, 09 Aug 2017 13:27:28 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/serial-console/</guid>
+      <description>  Add the file:  cat &amp;gt; /etc/default/grub.d/99console.cfg &amp;lt;&amp;lt; EOF GRUB_CMDLINE_LINUX_DEFAULT=&amp;quot;$GRUB_CMDLINE_LINUX_DEFAULT console=tty0 console=ttyS0,38400n8&amp;quot; GRUB_TERMINAL=serial GRUB_SERIAL_COMMAND=&amp;quot;serial --speed=38400 --unit=0 --word=8 --parity=no --stop=1&amp;quot; EOF   Update grub:  sudo update-grub  References  Configure console access on the target machine  </description>
+    </item>
+    
+    <item>
+      <title>Windows guests</title>
+      <link>https://mhcerri.github.io/posts/windows-guests/</link>
+      <pubDate>Mon, 10 Jul 2017 09:08:35 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/windows-guests/</guid>
+      <description>Useful links  PDF versions of these links were saved in ./windows-guests/.
+  Install Windows7 on KVM Qemu
+Steps on how to run a Windows guest on KVM with libvirt.
+ QEMU Wiki: Features/GuestAgent
+Details on what is needed to run the QEMU guest agent.
+ Windows Guest Virtual Machines on Red Hat Enterprise Linux 7
+Tips for More Efficiency with Windows Guest Virtual Machines.
+ Tutorial for fixing Error Code ‘0xc004c008′ in Windows 10 and Windows 8.</description>
+    </item>
+    
+    <item>
+      <title>How to unpack a debian source package</title>
+      <link>https://mhcerri.github.io/posts/how-to-unpack-a-debian-source-package/</link>
+      <pubDate>Thu, 29 Jun 2017 09:13:29 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/how-to-unpack-a-debian-source-package/</guid>
+      <description>There are two kinds of Debian source packages: old ones and new ones.
+A. Old ones look like this:
+ hello-1.3-4.tar.gz hello-1.3-4.diff.gz  You unpack them by untaring the .tar.gz. There is NO need to apply the diff.
+B. New ones look like this:
+ hello_1.3-11.dsc hello_1.3-11.diff.gz hello_1.3-11.orig.tar.gz - note the `.orig` part  Here you MUST use dpkg-source or apply the diff manually - see below.
+If you have dpkg-source you should put the files in the same directory and type dpkg-source -x &amp;lt;whatever&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Kernel debug with GDB and QEMU</title>
+      <link>https://mhcerri.github.io/posts/kernel-debug-with-gdb-and-qemu/</link>
+      <pubDate>Wed, 26 Apr 2017 10:19:38 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/kernel-debug-with-gdb-and-qemu/</guid>
+      <description>This tutorial focuses on the practical aspects of preparing a QEMU system to debug the kernel with GDB.
+The main goal of this tutorial is to quickly prepare a system for debugging:
+ In order to debug the kernel is necessary to keep the build root locally. Because of that, this tutoral focus on how to build a minimal kernel image that can be compiled in a few minutes. Since the focus is the kernel, this tutorial makes use of pre-generated rootfs images to simplify the process.</description>
+    </item>
+    
+    <item>
+      <title>Creating VMs with uvtool</title>
+      <link>https://mhcerri.github.io/posts/creating-vms-with-uvtool/</link>
+      <pubDate>Fri, 17 Mar 2017 16:43:17 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/creating-vms-with-uvtool/</guid>
+      <description>Use uvtool to create a machine:
+sudo apt install uvtool  Download cloud images with
+uvt-simplestreams-libvirt --verbose sync release=xenial arch=amd64  Images and meta-data are located under /var/lib/uvtool/libvirt.
+uvt-kvm create --cpu 2 --memory 2048 testvm release=xenial arch=amd64  testvm is the name of the VM. You can use that for various other commands:
+uvt-kvm wait --insecure testvm uvt-kvm ip testvm uvt-kvm ssh --insecure testvm  The --insecure is needed for ssh to disable host key verification.</description>
+    </item>
+    
+    <item>
+      <title>Debian packaging generic kernels</title>
+      <link>https://mhcerri.github.io/posts/upstream-kernel-deb/</link>
+      <pubDate>Mon, 13 Mar 2017 10:09:44 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/upstream-kernel-deb/</guid>
+      <description>Copy a your .config file to the kernel directory and run:
+make deb-pkg -j $(getconf _NPROCESSORS_ONLN) LOCALVERSION=-custom KDEB_PKGVERSION=$(make kernelversion)-1   Set CONFIG_DEBUG_INFO=n if you want to avoid to build the debug symbol package.
+ Cross compiling Install the target cross compile toolchain and add the following variable to the make command:
+ARCH=&amp;lt;arch&amp;gt; CROSS_COMPILE=/usr/bin/&amp;lt;toolchain-arch&amp;gt;-linux-gnu-   &amp;lt;arch&amp;gt; should match one directory in ./arch/. &amp;lt;toolchain-arch&amp;gt; is the prefix of the cross compilation tools.</description>
+    </item>
+    
+    <item>
+      <title>Inspecting file systems and block devices</title>
+      <link>https://mhcerri.github.io/posts/inspecting-fs-and-block-devices/</link>
+      <pubDate>Thu, 09 Mar 2017 11:04:16 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/inspecting-fs-and-block-devices/</guid>
+      <description>File system information sudo dumpe2fs /dev/&amp;lt;device&amp;gt;  Or for size information:
+sudo dumpe2fs /dev/&amp;lt;device&amp;gt; | grep size  Physical blocks of a file sudo PAGER=cat debugfs -R &#39;stat &amp;lt;file&amp;gt;&#39; /dev/&amp;lt;device&amp;gt;  Notes: -&amp;lt;file&amp;gt; must be relative to the file system. --R is used to give a direct command. Omit -R &#39;...&#39; to enter interactive mode. -PAGER=cat ensures that no pager (as less) is used.
+ Check man debugfs for additional commands.</description>
+    </item>
+    
+    <item>
+      <title>Creating a DKMS deb package</title>
+      <link>https://mhcerri.github.io/posts/creating-a-dkms-deb/</link>
+      <pubDate>Tue, 21 Feb 2017 09:12:00 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/creating-a-dkms-deb/</guid>
+      <description>All the steps to create a deb package with a DKMS module. It&amp;rsquo;s assumes a native deb package for simplicity.
+Preparation  Install tools for deb packaging:
+apt install devscripts dh # TODO check it
+ Install DKMS:
+apt install dkms
+  Generate a base debian package By default, dkms mkdsc uses the systems directories when creating and building a DKMS package.
+To override that, create a file pointing to your local directory:</description>
+    </item>
+    
+    <item>
+      <title>Cloning fast with Git</title>
+      <link>https://mhcerri.github.io/posts/cloning-fast-with-git/</link>
+      <pubDate>Wed, 15 Feb 2017 12:49:17 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/cloning-fast-with-git/</guid>
+      <description>When a similar repository is already available locally on the machine, it&amp;rsquo;s possible to use it to avoid to download the entire repository.
+Example:
+git clone --progress --reference ./yakkety/ --dissociate git+ssh://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/zesty  </description>
+    </item>
+    
+    <item>
+      <title>Simple way to encrypt and decrypt data</title>
+      <link>https://mhcerri.github.io/posts/encrypting-data/</link>
+      <pubDate>Sat, 04 Feb 2017 17:01:14 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/encrypting-data/</guid>
+      <description>Encrypting With openssl:
+openssl enc -aes-256-cbc -salt -a  Then type the password twice, type or paste the clear text and hit enter followed by ctrl-d twice.
+Decrypting With openssl:
+openssl enc -aes-256-cbc -salt -a -d  Then type the password once, type or paste the cipher text and hit enter followed by ctrl-d twice.</description>
+    </item>
+    
+    <item>
+      <title>Basic development tools on Arch Linux</title>
+      <link>https://mhcerri.github.io/posts/basic-development-tools-on-arch-linux/</link>
+      <pubDate>Mon, 25 Apr 2016 08:41:15 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/basic-development-tools-on-arch-linux/</guid>
+      <description>Arch Linux has a group of packages containing all the basic development tools.
+To install:
+pacman -S base-devel  This group contains the following packages:
+$ pacman -Sg base-devel base-devel autoconf base-devel automake base-devel binutils base-devel bison base-devel fakeroot base-devel file base-devel findutils base-devel flex base-devel gawk base-devel gcc base-devel gettext base-devel grep base-devel groff base-devel gzip base-devel libtool base-devel m4 base-devel make base-devel pacman base-devel patch base-devel pkg-config base-devel sed base-devel sudo base-devel texinfo base-devel util-linux base-devel which</description>
+    </item>
+    
+    <item>
+      <title>Finding packages that provide a file</title>
+      <link>https://mhcerri.github.io/posts/finding-packages-that-provide-a-file/</link>
+      <pubDate>Sat, 26 Dec 2015 19:30:08 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/finding-packages-that-provide-a-file/</guid>
+      <description>yum has a very useful feature used to find out which package provides an specific file or a file pattern.
+pacman doesn&amp;rsquo;t have such feature but it&amp;rsquo;s possible to get similar information using pkgfile.
+To install pkgfile:
+$ sudo pacman -S pkgfile $ sudo pkgfile --update And to search a package that contains a file, use the command:
+$ pkgfile bash core/bash community/gulp community/nodejs-grunt-cli To get details about each match:</description>
+    </item>
+    
+    <item>
+      <title>Simple Vim snippet for markdown files</title>
+      <link>https://mhcerri.github.io/posts/simple-vim-snippet-for-markdown-files/</link>
+      <pubDate>Mon, 14 Dec 2015 14:37:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/simple-vim-snippet-for-markdown-files/</guid>
+      <description>In markdown, fenced code blocks are handy because they allow you to explicitly define the language to be used to highlight your code.
+The only problem is that it&amp;rsquo;s a bit painful to enter the triple backquotes (```) with a non US keyboard.
+To make it easier to write markdown documents, I use the following config in my ~/.vimrc:
+au BufNewFile,BufRead *.md iabbrev &amp;#39;&amp;#39;&amp;#39; ``` That way every time I type triple quotes (&#39;&#39;&#39;) followed by a new line or a space it&amp;rsquo;s replaced by the triple backquotes.</description>
+    </item>
+    
+    <item>
+      <title>Restricting user for SSH port forwarding</title>
+      <link>https://mhcerri.github.io/posts/restricting-user-for-ssh-port-forwarding/</link>
+      <pubDate>Mon, 14 Dec 2015 09:42:46 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/restricting-user-for-ssh-port-forwarding/</guid>
+      <description>This is a very basic configuration for the SSH daemon to restrict a user to be used only for port forwarding with public key authentication. These steps does not cover any form of chroot or sandbox.
+First step: create a user and his base home directory structure:
+useradd dummy mkdir -p /home/dummy/.ssh On the remote host, generate a pair of keys if needed:
+ssh-keygen -b 4096 -t rsa Copy the file id_rsa.</description>
+    </item>
+    
+    <item>
+      <title>Linux containers 101</title>
+      <link>https://mhcerri.github.io/posts/linux-containers-/</link>
+      <pubDate>Mon, 07 Dec 2015 11:43:55 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/linux-containers-/</guid>
+      <description>Linux containers (LXC) is a lightweight method of virtualization at the operating system level. In a sentence it&amp;rsquo;s a chroot on steroids providing resources (CPU, memory, etc) isolation thanks to cgroups.
+Install the necessary packages To start with Linux containers, install the following packages:
+# On ArchLinux pacman -S lxc arch-install-scripts lxc-checkconfig # On Fedora dnf install lxc lxc-extra lxc-templates Configure the network In this example, containers will be created by default with a ethernet pair device connected to a bridge.</description>
+    </item>
+    
+    <item>
+      <title>Running nginx as non-root user</title>
+      <link>https://mhcerri.github.io/posts/running-nginx-as-non-root-user/</link>
+      <pubDate>Wed, 02 Dec 2015 11:06:58 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/running-nginx-as-non-root-user/</guid>
+      <description>This is a simple recipe to run nginx without privileges.
+Create a configuration file with a simple proxy setup and redirecting most of the needed files away from the default locations:
+nginx_dev.conf:
+pid /tmp/nginx_dev/nginx.pid; error_log /tmp/nginx_dev/error.log; worker_processes 1; events { worker_connections 1024; } http { root /tmp/nginx_dev/; access_log /tmp/nginx_dev/access.log; client_body_temp_path /tmp/nginx_dev/client_body/; fastcgi_temp_path /tmp/nginx_dev/fastcgi/; proxy_temp_path /tmp/nginx_dev/proxy/; scgi_temp_path /tmp/nginx_dev/scgi/; uwsgi_temp_path /tmp/nginx_dev/uwsgi/; include /etc/nginx/mime.types; server { listen 8001; location / { proxy_pass http://localhost:8000; } location /static/ { alias /tmp/nginx_dev/static/; } } } All the necessary files will be created inside the directory /tmp/nginx_dev, that needs to be created:</description>
+    </item>
+    
+    <item>
+      <title>Downgrading packages in Arch Linux</title>
+      <link>https://mhcerri.github.io/posts/downgrading-packages-in-arch-linux/</link>
+      <pubDate>Mon, 23 Nov 2015 22:49:34 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/downgrading-packages-in-arch-linux/</guid>
+      <description>Arch Linux is a rolling release ditro and sometimes things get broken and need to be downgraded.
+There are several ways to that, but the easiest is installing from the package cache. cd to the cache dir:
+cd /var/cache/pacman/pkg/ Find the version of the package that you want to downgrade to and install it using pacman:
+pacman -U &amp;lt;file_name_of_the_package&amp;gt; If the cache was cleaned, you can download a snapshot or rebuild the package following the steps decribed in the Arch Linux wiki.</description>
+    </item>
+    
+    <item>
+      <title>Standalone Postgres</title>
+      <link>https://mhcerri.github.io/posts/standalone-postgres/</link>
+      <pubDate>Wed, 18 Nov 2015 14:50:43 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/standalone-postgres/</guid>
+      <description>This post covers a few basic concepts of Postgres and the steps to setup a standalone Postgres server running without privileges.
+All files related to a Postgres instance are stored in its data directory, usually referenced as PG_DATA. Usually the default location of PG_DATA is /var/lib/pgsql/data or something similar (i.e. /var/lib/pgsql/9.4/data on CentOs) and this is the path used by the standard instance controlled via the init service.
+However, it&amp;rsquo;s possible to initialize a new data directory on any path of your choice and run a Postgres instance pointing to it.</description>
+    </item>
+    
+    <item>
+      <title>Configure a proxy for Atom</title>
+      <link>https://mhcerri.github.io/posts/configure-a-proxy-for-atom/</link>
+      <pubDate>Fri, 23 Oct 2015 00:36:06 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/configure-a-proxy-for-atom/</guid>
+      <description>In order to install packages from the internet a proxy needs to be set up if Internet connection is not directly available.
+ Edit the file $HOME/.atom/.apmrc and add the following lines:  ; Proxy https-proxy=http://your-proxy-host:your-proxy-port http-proxy=http://your-proxy-host:your-proxy-port strict-ssl=false  </description>
+    </item>
+    
+    <item>
+      <title>Building tmux statically</title>
+      <link>https://mhcerri.github.io/posts/building-tmux-statically/</link>
+      <pubDate>Fri, 23 Oct 2015 00:31:45 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/building-tmux-statically/</guid>
+      <description>Follow the steps:
+yum groupinstall &amp;#39;Development tools&amp;#39; yum install glibc-static # or yum install compat-glibc mkdir tmux cd tmux libevent curl -O -L &amp;#39;https://github.com/libevent/libevent/releases/download/release-2.0.22-stable/libevent-2.0.22-stable.tar.gz&amp;#39; tar xf libevent-2.0.22-stable.tar.gz cd libevent-2.0.22-stable/ ./configure --prefix=/tmp/local --disable-shared make -j4 make install cd .. ncurses curl -O -L &amp;#39;ftp://ftp.gnu.org/gnu/ncurses/ncurses-5.9.tar.gz&amp;#39; tar xf ncurses-5.9.tar.gz Apply the following patch or edit the file ./ncurses-5.9.orig/ncurses/base/MKlib_gen.sh manually:
+--- ./ncurses-5.9.orig/ncurses/base/MKlib_gen.sh	2011-01-22 17:47:29.000000000 -0200 +++ ./ncurses-5.9/ncurses/base/MKlib_gen.sh	2015-09-21 14:01:10.438925379 -0300 @@ -66,6 +66,24 @@ preprocessor=&amp;#34;$1 -DNCURSES_INTERNALS -I.</description>
+    </item>
+    
+    <item>
+      <title>Python auto completion with Vim</title>
+      <link>https://mhcerri.github.io/posts/python-auto-complete-with-vim/</link>
+      <pubDate>Fri, 23 Oct 2015 00:15:00 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/python-auto-complete-with-vim/</guid>
+      <description>Python auto completion in Vim is very well supported by Jedi.
+However, to be fully functional Jedi and Vim should used the same python version.
+The first step is to install the Vim with python3 support:
+pacman -S vim-python3  And then install the Jedi plugin for Vim:
+pacman -S python-jedi  That&amp;rsquo;s all. Now open a .py file in Vim and use Ctrl+Space to get the completion options.</description>
+    </item>
+    
+    <item>
+      <title>How to fix load 1.0 issue on MK802</title>
+      <link>https://mhcerri.github.io/posts/how-to-fix-load--issue-on-mk/</link>
+      <pubDate>Tue, 04 Aug 2015 09:11:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/how-to-fix-load--issue-on-mk/</guid>
+      <description>Note: I&amp;rsquo;m currently using a Raspberry Pi 2 and Arch Linux ARM
+The load of my MK802 running Fedora 20 was constantly above 1.0. Checking the state of the processes I found:
+$ ps -eo pid,state,cmd | awk &amp;#39;$2 != &amp;#34;S&amp;#34; &amp;amp;&amp;amp; $2 != &amp;#34;R&amp;#34;&amp;#39; 34 D [usb-storage] After searching on Google, I found that it seems to be a problem related to the OTG port. To fix we need to change some parameters in the script.</description>
+    </item>
+    
+    <item>
+      <title>Mini home server with MK802</title>
+      <link>https://mhcerri.github.io/posts/mini-home-server-with-mk/</link>
+      <pubDate>Tue, 04 Aug 2015 09:02:39 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/mini-home-server-with-mk/</guid>
+      <description>Note: I&amp;rsquo;m currently using a Raspberry Pi 2 and Arch Linux ARM
+My first attempt to set up a mini home server was using a Raspberry Pi as a torrent and a DLNA server running with an external HDD. Unfortunately it had a lot of USB related issues that caused the HDD and the network to disconnect very often. I tried several workarounds, from tweaks in the boot-loader to fixes in the kernel without success.</description>
+    </item>
+    
+    <item>
+      <title>NetworkManager dispatchers</title>
+      <link>https://mhcerri.github.io/posts/networkmanager-dispatchers/</link>
+      <pubDate>Tue, 04 Aug 2015 08:57:42 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/networkmanager-dispatchers/</guid>
+      <description>NetworkManager makes network configuration easy and simple, but it also provides some cool features to specific scenarios.
+I use rygel in my small home server to stream videos to other devices in my local network. Currently this home server is connect to my network via wifi (I&amp;rsquo;m using a cheap android stick with linux as my home server and it doesn&amp;rsquo;t have an ethernet interface) and eventually the wifi connection can drop.</description>
+    </item>
+    
+    <item>
+      <title>How to move a Python virtualenv to another directory</title>
+      <link>https://mhcerri.github.io/posts/how-to-move-a-python-virtualenv-to-another-directory/</link>
+      <pubDate>Tue, 04 Aug 2015 08:53:58 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/how-to-move-a-python-virtualenv-to-another-directory/</guid>
+      <description>Every python script installed in the ./bin/ directory of a Python virtualenv installation has a shebang pointing to the absolute path of the python binary in the virtualenv. That&amp;rsquo;s important to assure that those scripts will only be executed with the correct python binary.
+However, when a Python virtualenv is moved to another directory all those scripts end up outdated.
+To fix that, all that&amp;rsquo;s necessary to do is:
+virtualenv --relocatable .</description>
+    </item>
+    
+    <item>
+      <title>Installing Python from sources</title>
+      <link>https://mhcerri.github.io/posts/installing-python-from-sources/</link>
+      <pubDate>Tue, 04 Aug 2015 08:48:23 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/installing-python-from-sources/</guid>
+      <description>Python is present in a large number of distros today and in fact most distros have at least one or more core components that are written or extensible using Python.
+That is a good thing in the way that you can write Python application without any need to worry if Python will be available or not for ditro A or distro B. But it also creates some problems.
+Not all python modules are available via the distro package manager There are thousands of modules and libraries available for Python, several of them are constantly updated.</description>
+    </item>
+    
+    <item>
+      <title>Use a proxy server on Android</title>
+      <link>https://mhcerri.github.io/posts/use-a-proxy-server-on-android/</link>
+      <pubDate>Tue, 04 Aug 2015 01:40:36 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/use-a-proxy-server-on-android/</guid>
+      <description>When I&amp;rsquo;m connected with my mobile phone to a network that I don&amp;rsquo;t trust or has limited connection, I usually use my remote server as a web proxy to access the internet.
+The setup steps are simple:
+ Install connectbot from F-Droid.
+ Configure an SSH connection to your host with a dynamic port forwarding (SOCKS) on the port 9999.
+ Install firefox for Android.
+ Open the URL about:config on Firefox and change the following configurations:</description>
+    </item>
+    
+    <item>
+      <title>Writing Scala programs with IntelliJ Idea</title>
+      <link>https://mhcerri.github.io/posts/writing-scala-programs-with-intellij-idea/</link>
+      <pubDate>Tue, 04 Aug 2015 01:35:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/writing-scala-programs-with-intellij-idea/</guid>
+      <description>Download the community version from JetBrains web site or install it from the distro repository:
+# pacman -S intellij-idea-community-edition At the first time it is executed:
+ Customize any configurations.
+ Install the official scala plug-in.
+ Install the additional plug-in scalariform.
+ After the initial setup, go to File -&amp;gt; Settings -&amp;gt; Keymap and search for scalariform and change its shortcut to Ctrl+Shift+S.
+  </description>
+    </item>
+    
+    <item>
+      <title>Sharing desktop via VNC</title>
+      <link>https://mhcerri.github.io/posts/sharing-desktop-via-vnc/</link>
+      <pubDate>Tue, 04 Aug 2015 01:30:48 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/sharing-desktop-via-vnc/</guid>
+      <description>Install tigervnc.
+Generate a password.
+$ vncpasswd ~/.vncpasswd Password: Verify: Would you like to enter a view-only password (y/n)? n Run x0vncserver.
+$ x0vncserver -passwordfile ~/.vncpasswd Check if the firewall is not blocking connections to the port 5900 and try to access the current desktop using a VNC client from other machine.</description>
+    </item>
+    
+    <item>
+      <title>Using tags with Jekyll and GitHub Pages</title>
+      <link>https://mhcerri.github.io/posts/using-tags-with-jekyll-and-github-pages/</link>
+      <pubDate>Tue, 04 Aug 2015 01:06:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/using-tags-with-jekyll-and-github-pages/</guid>
+      <description>Since GitHub Pages does not support third party plugins it&amp;rsquo;s not possible to generate a page for each post tag without pushing a new file for each used tag.
+However it&amp;rsquo;s possible to use a single tag page with anchors to each tag.
+The first step is to create a new tag page tags.html.
+{% raw %} --- layout: page title: Tags permalink: /tags/ --- {% assign tags = site.tags | sort %} {% for tag in tags %} {% assign tagname = tag | first | slugify %} &amp;lt;h3 id=&amp;#34;{{ tagname }}&amp;#34;&amp;gt;{{ tagname }}&amp;lt;/h3&amp;gt; &amp;lt;ul&amp;gt; {% for post in tag[1] %}&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;{{ post.</description>
+    </item>
+    
+    <item>
+      <title>My initial post</title>
+      <link>https://mhcerri.github.io/posts/my-initial-post/</link>
+      <pubDate>Mon, 03 Aug 2015 23:22:06 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/my-initial-post/</guid>
+      <description>I&amp;rsquo;m not a big fan of ruby and because of that I never used Jekyll, but since GitHub Pages uses it and I needed a place to keep my technical notes without having to worry with things such as web hosting and tons of configs I decided to give it a try.
+GitHub Pages For the GitHub Page part, every necessary step is simply described in the GitHub Pages site.</description>
+    </item>
+    
+  </channel>
+</rss>

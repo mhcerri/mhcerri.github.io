@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Downgrade on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/downgrade/</link>
+    <description>Recent content in Downgrade on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Mon, 23 Nov 2015 22:49:34 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/downgrade/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Downgrading packages in Arch Linux</title>
+      <link>https://mhcerri.github.io/posts/downgrading-packages-in-arch-linux/</link>
+      <pubDate>Mon, 23 Nov 2015 22:49:34 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/downgrading-packages-in-arch-linux/</guid>
+      <description>Arch Linux is a rolling release ditro and sometimes things get broken and need to be downgraded.
+There are several ways to that, but the easiest is installing from the package cache. cd to the cache dir:
+cd /var/cache/pacman/pkg/ Find the version of the package that you want to downgrade to and install it using pacman:
+pacman -U &amp;lt;file_name_of_the_package&amp;gt; If the cache was cleaned, you can download a snapshot or rebuild the package following the steps decribed in the Arch Linux wiki.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Desktop on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/desktop/</link>
+    <description>Recent content in Desktop on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 04 Aug 2015 01:30:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/desktop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sharing desktop via VNC</title>
+      <link>https://mhcerri.github.io/posts/sharing-desktop-via-vnc/</link>
+      <pubDate>Tue, 04 Aug 2015 01:30:48 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/sharing-desktop-via-vnc/</guid>
+      <description>Install tigervnc.
+Generate a password.
+$ vncpasswd ~/.vncpasswd Password: Verify: Would you like to enter a view-only password (y/n)? n Run x0vncserver.
+$ x0vncserver -passwordfile ~/.vncpasswd Check if the firewall is not blocking connections to the port 5900 and try to access the current desktop using a VNC client from other machine.</description>
+    </item>
+    
+  </channel>
+</rss>

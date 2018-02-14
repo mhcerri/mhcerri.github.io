@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Postgresql on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/postgresql/</link>
+    <description>Recent content in Postgresql on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Wed, 18 Nov 2015 14:50:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Standalone Postgres</title>
+      <link>https://mhcerri.github.io/posts/standalone-postgres/</link>
+      <pubDate>Wed, 18 Nov 2015 14:50:43 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/standalone-postgres/</guid>
+      <description>This post covers a few basic concepts of Postgres and the steps to setup a standalone Postgres server running without privileges.
+All files related to a Postgres instance are stored in its data directory, usually referenced as PG_DATA. Usually the default location of PG_DATA is /var/lib/pgsql/data or something similar (i.e. /var/lib/pgsql/9.4/data on CentOs) and this is the path used by the standard instance controlled via the init service.
+However, it&amp;rsquo;s possible to initialize a new data directory on any path of your choice and run a Postgres instance pointing to it.</description>
+    </item>
+    
+  </channel>
+</rss>

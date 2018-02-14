@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/</link>
+    <description>Recent content in Tags on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 04 Aug 2015 01:40:36 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android</title>
+      <link>https://mhcerri.github.io/tags/android/</link>
+      <pubDate>Tue, 04 Aug 2015 01:40:36 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archlinux</title>
+      <link>https://mhcerri.github.io/tags/archlinux/</link>
+      <pubDate>Mon, 25 Apr 2016 08:41:15 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/archlinux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atom</title>
+      <link>https://mhcerri.github.io/tags/atom/</link>
+      <pubDate>Fri, 23 Oct 2015 00:36:06 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/atom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Auto Complete</title>
+      <link>https://mhcerri.github.io/tags/auto-complete/</link>
+      <pubDate>Fri, 23 Oct 2015 00:15:00 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/auto-complete/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Autopkgtest</title>
+      <link>https://mhcerri.github.io/tags/autopkgtest/</link>
+      <pubDate>Wed, 13 Dec 2017 15:39:52 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/autopkgtest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Block Devices</title>
+      <link>https://mhcerri.github.io/tags/block-devices/</link>
+      <pubDate>Thu, 09 Mar 2017 11:04:16 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/block-devices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://mhcerri.github.io/tags/blog/</link>
+      <pubDate>Tue, 04 Aug 2015 01:06:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Connectbot</title>
+      <link>https://mhcerri.github.io/tags/connectbot/</link>
+      <pubDate>Tue, 04 Aug 2015 01:40:36 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/connectbot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Containers</title>
+      <link>https://mhcerri.github.io/tags/containers/</link>
+      <pubDate>Tue, 03 Oct 2017 10:47:54 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/containers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deb</title>
+      <link>https://mhcerri.github.io/tags/deb/</link>
+      <pubDate>Thu, 29 Jun 2017 09:13:29 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/deb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Debian</title>
+      <link>https://mhcerri.github.io/tags/debian/</link>
+      <pubDate>Thu, 29 Jun 2017 09:13:29 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Debug</title>
+      <link>https://mhcerri.github.io/tags/debug/</link>
+      <pubDate>Tue, 23 Jan 2018 13:58:17 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/debug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Desktop</title>
+      <link>https://mhcerri.github.io/tags/desktop/</link>
+      <pubDate>Tue, 04 Aug 2015 01:30:48 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/desktop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dkms</title>
+      <link>https://mhcerri.github.io/tags/dkms/</link>
+      <pubDate>Tue, 21 Feb 2017 09:12:00 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/dkms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://mhcerri.github.io/tags/docker/</link>
+      <pubDate>Tue, 03 Oct 2017 10:47:54 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Downgrade</title>
+      <link>https://mhcerri.github.io/tags/downgrade/</link>
+      <pubDate>Mon, 23 Nov 2015 22:49:34 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/downgrade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Encryption</title>
+      <link>https://mhcerri.github.io/tags/encryption/</link>
+      <pubDate>Sat, 04 Feb 2017 17:01:14 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/encryption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fedora</title>
+      <link>https://mhcerri.github.io/tags/fedora/</link>
+      <pubDate>Tue, 04 Aug 2015 09:11:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/fedora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Firefox</title>
+      <link>https://mhcerri.github.io/tags/firefox/</link>
+      <pubDate>Tue, 04 Aug 2015 01:40:36 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/firefox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fs</title>
+      <link>https://mhcerri.github.io/tags/fs/</link>
+      <pubDate>Thu, 09 Mar 2017 11:04:16 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/fs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gdb</title>
+      <link>https://mhcerri.github.io/tags/gdb/</link>
+      <pubDate>Tue, 23 Jan 2018 13:58:17 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/gdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://mhcerri.github.io/tags/git/</link>
+      <pubDate>Wed, 15 Feb 2017 12:49:17 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github Pages</title>
+      <link>https://mhcerri.github.io/tags/github-pages/</link>
+      <pubDate>Tue, 04 Aug 2015 01:06:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/github-pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyperv</title>
+      <link>https://mhcerri.github.io/tags/hyperv/</link>
+      <pubDate>Tue, 03 Oct 2017 12:33:43 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/hyperv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://mhcerri.github.io/tags/idea/</link>
+      <pubDate>Tue, 04 Aug 2015 01:35:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/idea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intellij</title>
+      <link>https://mhcerri.github.io/tags/intellij/</link>
+      <pubDate>Tue, 04 Aug 2015 01:35:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/intellij/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://mhcerri.github.io/tags/java/</link>
+      <pubDate>Tue, 04 Aug 2015 01:35:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jedi</title>
+      <link>https://mhcerri.github.io/tags/jedi/</link>
+      <pubDate>Fri, 23 Oct 2015 00:15:00 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/jedi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jekyll</title>
+      <link>https://mhcerri.github.io/tags/jekyll/</link>
+      <pubDate>Tue, 04 Aug 2015 01:06:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kernel</title>
+      <link>https://mhcerri.github.io/tags/kernel/</link>
+      <pubDate>Tue, 23 Jan 2018 13:58:17 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/kernel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://mhcerri.github.io/tags/linux/</link>
+      <pubDate>Mon, 07 Dec 2015 11:43:55 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lxc</title>
+      <link>https://mhcerri.github.io/tags/lxc/</link>
+      <pubDate>Mon, 07 Dec 2015 11:43:55 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/lxc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://mhcerri.github.io/tags/markdown/</link>
+      <pubDate>Mon, 14 Dec 2015 14:37:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mk802</title>
+      <link>https://mhcerri.github.io/tags/mk802/</link>
+      <pubDate>Tue, 04 Aug 2015 09:11:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/mk802/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Networkmanager</title>
+      <link>https://mhcerri.github.io/tags/networkmanager/</link>
+      <pubDate>Tue, 04 Aug 2015 08:57:42 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/networkmanager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>https://mhcerri.github.io/tags/nginx/</link>
+      <pubDate>Wed, 02 Dec 2015 11:06:58 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Non Root</title>
+      <link>https://mhcerri.github.io/tags/non-root/</link>
+      <pubDate>Wed, 02 Dec 2015 11:06:58 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/non-root/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openssl</title>
+      <link>https://mhcerri.github.io/tags/openssl/</link>
+      <pubDate>Sat, 04 Feb 2017 17:01:14 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/openssl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openvpn</title>
+      <link>https://mhcerri.github.io/tags/openvpn/</link>
+      <pubDate>Sun, 11 Feb 2018 18:31:20 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/openvpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pacman</title>
+      <link>https://mhcerri.github.io/tags/pacman/</link>
+      <pubDate>Mon, 25 Apr 2016 08:41:15 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/pacman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pip</title>
+      <link>https://mhcerri.github.io/tags/pip/</link>
+      <pubDate>Tue, 04 Aug 2015 08:48:23 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/pip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pkgfile</title>
+      <link>https://mhcerri.github.io/tags/pkgfile/</link>
+      <pubDate>Sat, 26 Dec 2015 19:30:08 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/pkgfile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Portforwarding</title>
+      <link>https://mhcerri.github.io/tags/portforwarding/</link>
+      <pubDate>Mon, 14 Dec 2015 09:42:46 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/portforwarding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Postgres</title>
+      <link>https://mhcerri.github.io/tags/postgres/</link>
+      <pubDate>Wed, 18 Nov 2015 14:50:43 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/postgres/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Postgresql</title>
+      <link>https://mhcerri.github.io/tags/postgresql/</link>
+      <pubDate>Wed, 18 Nov 2015 14:50:43 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proxy</title>
+      <link>https://mhcerri.github.io/tags/proxy/</link>
+      <pubDate>Fri, 23 Oct 2015 00:36:06 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/proxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mhcerri.github.io/tags/python/</link>
+      <pubDate>Fri, 23 Oct 2015 00:15:00 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qemu</title>
+      <link>https://mhcerri.github.io/tags/qemu/</link>
+      <pubDate>Tue, 23 Jan 2018 13:58:17 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/qemu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://mhcerri.github.io/tags/scala/</link>
+      <pubDate>Tue, 04 Aug 2015 01:35:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serial</title>
+      <link>https://mhcerri.github.io/tags/serial/</link>
+      <pubDate>Wed, 09 Aug 2017 13:27:28 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/serial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Snippet</title>
+      <link>https://mhcerri.github.io/tags/snippet/</link>
+      <pubDate>Mon, 14 Dec 2015 14:37:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/snippet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ssh</title>
+      <link>https://mhcerri.github.io/tags/ssh/</link>
+      <pubDate>Tue, 03 Oct 2017 10:47:54 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Systemd</title>
+      <link>https://mhcerri.github.io/tags/systemd/</link>
+      <pubDate>Wed, 09 Aug 2017 13:27:28 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/systemd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://mhcerri.github.io/tags/test/</link>
+      <pubDate>Wed, 13 Dec 2017 15:39:52 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tmux</title>
+      <link>https://mhcerri.github.io/tags/tmux/</link>
+      <pubDate>Fri, 23 Oct 2015 00:31:45 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/tmux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tricks</title>
+      <link>https://mhcerri.github.io/tags/tricks/</link>
+      <pubDate>Thu, 21 Sep 2017 15:10:56 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/tricks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://mhcerri.github.io/tags/ubuntu/</link>
+      <pubDate>Tue, 23 Jan 2018 13:58:17 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uvtool</title>
+      <link>https://mhcerri.github.io/tags/uvtool/</link>
+      <pubDate>Fri, 17 Mar 2017 16:43:17 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/uvtool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://mhcerri.github.io/tags/vim/</link>
+      <pubDate>Mon, 14 Dec 2015 14:37:01 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualenv</title>
+      <link>https://mhcerri.github.io/tags/virtualenv/</link>
+      <pubDate>Tue, 04 Aug 2015 08:53:58 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/virtualenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vnc</title>
+      <link>https://mhcerri.github.io/tags/vnc/</link>
+      <pubDate>Tue, 04 Aug 2015 01:30:48 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/vnc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vpn</title>
+      <link>https://mhcerri.github.io/tags/vpn/</link>
+      <pubDate>Sun, 11 Feb 2018 18:31:20 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/vpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wget</title>
+      <link>https://mhcerri.github.io/tags/wget/</link>
+      <pubDate>Thu, 21 Sep 2017 15:10:56 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/wget/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://mhcerri.github.io/tags/windows/</link>
+      <pubDate>Mon, 10 Jul 2017 09:08:35 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qemu on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/qemu/</link>
+    <description>Recent content in Qemu on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 23 Jan 2018 13:58:17 -0200</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/qemu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debugging the Ubuntu kernel with GDB and QEMU</title>
+      <link>https://mhcerri.github.io/posts/debugging-the-ubuntu-kernel-with-gdb-and-qemu/</link>
+      <pubDate>Tue, 23 Jan 2018 13:58:17 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/debugging-the-ubuntu-kernel-with-gdb-and-qemu/</guid>
+      <description>This tutorial focuses on the practical aspects of preparing an Ubuntu libvirt virtual machine to debug the ubuntu kernel.
+Preparing the VM Create an Ubuntu VM using uvt-kvm or virt-manager with the desired configurations.
+On the host machine, edit the VM domain XML:
+virsh edit &amp;quot;$GUESTNAME&amp;quot;  Replacing the first line:
+&amp;lt;domain type=&#39;kvm&#39;&amp;gt;  With:
+&amp;lt;domain type=&#39;kvm&#39; xmlns:qemu=&#39;http://libvirt.org/schemas/domain/qemu/1.0&#39;&amp;gt; &amp;lt;qemu:commandline&amp;gt; &amp;lt;qemu:arg value=&#39;-s&#39;/&amp;gt; &amp;lt;/qemu:commandline&amp;gt;   -s tells QEMU to start a GDB server on port 1234 (it&amp;rsquo;s equivalent to -gdb tcp::1234).</description>
+    </item>
+    
+    <item>
+      <title>Windows guests</title>
+      <link>https://mhcerri.github.io/posts/windows-guests/</link>
+      <pubDate>Mon, 10 Jul 2017 09:08:35 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/windows-guests/</guid>
+      <description>Useful links  PDF versions of these links were saved in ./windows-guests/.
+  Install Windows7 on KVM Qemu
+Steps on how to run a Windows guest on KVM with libvirt.
+ QEMU Wiki: Features/GuestAgent
+Details on what is needed to run the QEMU guest agent.
+ Windows Guest Virtual Machines on Red Hat Enterprise Linux 7
+Tips for More Efficiency with Windows Guest Virtual Machines.
+ Tutorial for fixing Error Code ‘0xc004c008′ in Windows 10 and Windows 8.</description>
+    </item>
+    
+    <item>
+      <title>Kernel debug with GDB and QEMU</title>
+      <link>https://mhcerri.github.io/posts/kernel-debug-with-gdb-and-qemu/</link>
+      <pubDate>Wed, 26 Apr 2017 10:19:38 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/kernel-debug-with-gdb-and-qemu/</guid>
+      <description>This tutorial focuses on the practical aspects of preparing a QEMU system to debug the kernel with GDB.
+The main goal of this tutorial is to quickly prepare a system for debugging:
+ In order to debug the kernel is necessary to keep the build root locally. Because of that, this tutoral focus on how to build a minimal kernel image that can be compiled in a few minutes. Since the focus is the kernel, this tutorial makes use of pre-generated rootfs images to simplify the process.</description>
+    </item>
+    
+    <item>
+      <title>Creating VMs with uvtool</title>
+      <link>https://mhcerri.github.io/posts/creating-vms-with-uvtool/</link>
+      <pubDate>Fri, 17 Mar 2017 16:43:17 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/creating-vms-with-uvtool/</guid>
+      <description>Use uvtool to create a machine:
+sudo apt install uvtool  Download cloud images with
+uvt-simplestreams-libvirt --verbose sync release=xenial arch=amd64  Images and meta-data are located under /var/lib/uvtool/libvirt.
+uvt-kvm create --cpu 2 --memory 2048 testvm release=xenial arch=amd64  testvm is the name of the VM. You can use that for various other commands:
+uvt-kvm wait --insecure testvm uvt-kvm ip testvm uvt-kvm ssh --insecure testvm  The --insecure is needed for ssh to disable host key verification.</description>
+    </item>
+    
+  </channel>
+</rss>

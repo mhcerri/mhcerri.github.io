@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jedi on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/jedi/</link>
+    <description>Recent content in Jedi on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Fri, 23 Oct 2015 00:15:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/jedi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python auto completion with Vim</title>
+      <link>https://mhcerri.github.io/posts/python-auto-complete-with-vim/</link>
+      <pubDate>Fri, 23 Oct 2015 00:15:00 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/python-auto-complete-with-vim/</guid>
+      <description>Python auto completion in Vim is very well supported by Jedi.
+However, to be fully functional Jedi and Vim should used the same python version.
+The first step is to install the Vim with python3 support:
+pacman -S vim-python3  And then install the Jedi plugin for Vim:
+pacman -S python-jedi  That&amp;rsquo;s all. Now open a .py file in Vim and use Ctrl+Space to get the completion options.</description>
+    </item>
+    
+  </channel>
+</rss>

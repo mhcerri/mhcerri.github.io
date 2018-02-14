@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Serial on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/serial/</link>
+    <description>Recent content in Serial on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Wed, 09 Aug 2017 13:27:28 -0300</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/serial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Serial console on VMs</title>
+      <link>https://mhcerri.github.io/posts/serial-console/</link>
+      <pubDate>Wed, 09 Aug 2017 13:27:28 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/serial-console/</guid>
+      <description>  Add the file:  cat &amp;gt; /etc/default/grub.d/99console.cfg &amp;lt;&amp;lt; EOF GRUB_CMDLINE_LINUX_DEFAULT=&amp;quot;$GRUB_CMDLINE_LINUX_DEFAULT console=tty0 console=ttyS0,38400n8&amp;quot; GRUB_TERMINAL=serial GRUB_SERIAL_COMMAND=&amp;quot;serial --speed=38400 --unit=0 --word=8 --parity=no --stop=1&amp;quot; EOF   Update grub:  sudo update-grub  References  Configure console access on the target machine  </description>
+    </item>
+    
+  </channel>
+</rss>

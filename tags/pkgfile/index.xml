@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pkgfile on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/pkgfile/</link>
+    <description>Recent content in Pkgfile on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Sat, 26 Dec 2015 19:30:08 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/pkgfile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Finding packages that provide a file</title>
+      <link>https://mhcerri.github.io/posts/finding-packages-that-provide-a-file/</link>
+      <pubDate>Sat, 26 Dec 2015 19:30:08 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/finding-packages-that-provide-a-file/</guid>
+      <description>yum has a very useful feature used to find out which package provides an specific file or a file pattern.
+pacman doesn&amp;rsquo;t have such feature but it&amp;rsquo;s possible to get similar information using pkgfile.
+To install pkgfile:
+$ sudo pacman -S pkgfile $ sudo pkgfile --update And to search a package that contains a file, use the command:
+$ pkgfile bash core/bash community/gulp community/nodejs-grunt-cli To get details about each match:</description>
+    </item>
+    
+  </channel>
+</rss>

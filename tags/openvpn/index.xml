@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Openvpn on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/openvpn/</link>
+    <description>Recent content in Openvpn on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Sun, 11 Feb 2018 18:31:20 -0200</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/openvpn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up an OpenVPN server</title>
+      <link>https://mhcerri.github.io/posts/openvpn-server/</link>
+      <pubDate>Sun, 11 Feb 2018 18:31:20 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/openvpn-server/</guid>
+      <description>These steps are intended to be used with Arch Linux but can be easily adapted to Ubuntu.
+TODO: Convert to ubuntu/debian.
+ System requirements The kernel needs to be compiled with TUN/TAP support.
+Packages Install the following packages:
+pacman -S openvpn easy-rsa apt-get install openvpn easy-rsa # TODO  For ovpn client files generation:
+aurget -S ovpngen   TODO: how to install ovpngen on Ubuntu.
+ Public Key Infrastructure (PKI)  For security purposes it&amp;rsquo;s recommended to use separate machines for server, client and CA.</description>
+    </item>
+    
+  </channel>
+</rss>

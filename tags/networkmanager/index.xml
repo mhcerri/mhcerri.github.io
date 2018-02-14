@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networkmanager on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/networkmanager/</link>
+    <description>Recent content in Networkmanager on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 04 Aug 2015 08:57:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/networkmanager/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NetworkManager dispatchers</title>
+      <link>https://mhcerri.github.io/posts/networkmanager-dispatchers/</link>
+      <pubDate>Tue, 04 Aug 2015 08:57:42 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/networkmanager-dispatchers/</guid>
+      <description>NetworkManager makes network configuration easy and simple, but it also provides some cool features to specific scenarios.
+I use rygel in my small home server to stream videos to other devices in my local network. Currently this home server is connect to my network via wifi (I&amp;rsquo;m using a cheap android stick with linux as my home server and it doesn&amp;rsquo;t have an ethernet interface) and eventually the wifi connection can drop.</description>
+    </item>
+    
+  </channel>
+</rss>

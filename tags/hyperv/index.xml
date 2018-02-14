@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hyperv on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/hyperv/</link>
+    <description>Recent content in Hyperv on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Tue, 03 Oct 2017 12:33:43 -0300</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/hyperv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hyper-V useful links</title>
+      <link>https://mhcerri.github.io/posts/hyperv-useful-links/</link>
+      <pubDate>Tue, 03 Oct 2017 12:33:43 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/hyperv-useful-links/</guid>
+      <description> Hyper-V Hypervisor Specifications. Nested Virtualization in Azure.  </description>
+    </item>
+    
+  </channel>
+</rss>

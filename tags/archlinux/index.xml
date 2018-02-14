@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archlinux on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/archlinux/</link>
+    <description>Recent content in Archlinux on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Mon, 25 Apr 2016 08:41:15 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/archlinux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic development tools on Arch Linux</title>
+      <link>https://mhcerri.github.io/posts/basic-development-tools-on-arch-linux/</link>
+      <pubDate>Mon, 25 Apr 2016 08:41:15 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/basic-development-tools-on-arch-linux/</guid>
+      <description>Arch Linux has a group of packages containing all the basic development tools.
+To install:
+pacman -S base-devel  This group contains the following packages:
+$ pacman -Sg base-devel base-devel autoconf base-devel automake base-devel binutils base-devel bison base-devel fakeroot base-devel file base-devel findutils base-devel flex base-devel gawk base-devel gcc base-devel gettext base-devel grep base-devel groff base-devel gzip base-devel libtool base-devel m4 base-devel make base-devel pacman base-devel patch base-devel pkg-config base-devel sed base-devel sudo base-devel texinfo base-devel util-linux base-devel which</description>
+    </item>
+    
+    <item>
+      <title>Finding packages that provide a file</title>
+      <link>https://mhcerri.github.io/posts/finding-packages-that-provide-a-file/</link>
+      <pubDate>Sat, 26 Dec 2015 19:30:08 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/finding-packages-that-provide-a-file/</guid>
+      <description>yum has a very useful feature used to find out which package provides an specific file or a file pattern.
+pacman doesn&amp;rsquo;t have such feature but it&amp;rsquo;s possible to get similar information using pkgfile.
+To install pkgfile:
+$ sudo pacman -S pkgfile $ sudo pkgfile --update And to search a package that contains a file, use the command:
+$ pkgfile bash core/bash community/gulp community/nodejs-grunt-cli To get details about each match:</description>
+    </item>
+    
+    <item>
+      <title>Downgrading packages in Arch Linux</title>
+      <link>https://mhcerri.github.io/posts/downgrading-packages-in-arch-linux/</link>
+      <pubDate>Mon, 23 Nov 2015 22:49:34 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/downgrading-packages-in-arch-linux/</guid>
+      <description>Arch Linux is a rolling release ditro and sometimes things get broken and need to be downgraded.
+There are several ways to that, but the easiest is installing from the package cache. cd to the cache dir:
+cd /var/cache/pacman/pkg/ Find the version of the package that you want to downgrade to and install it using pacman:
+pacman -U &amp;lt;file_name_of_the_package&amp;gt; If the cache was cleaned, you can download a snapshot or rebuild the package following the steps decribed in the Arch Linux wiki.</description>
+    </item>
+    
+    <item>
+      <title>Python auto completion with Vim</title>
+      <link>https://mhcerri.github.io/posts/python-auto-complete-with-vim/</link>
+      <pubDate>Fri, 23 Oct 2015 00:15:00 +0000</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/python-auto-complete-with-vim/</guid>
+      <description>Python auto completion in Vim is very well supported by Jedi.
+However, to be fully functional Jedi and Vim should used the same python version.
+The first step is to install the Vim with python3 support:
+pacman -S vim-python3  And then install the Jedi plugin for Vim:
+pacman -S python-jedi  That&amp;rsquo;s all. Now open a .py file in Vim and use Ctrl+Space to get the completion options.</description>
+    </item>
+    
+  </channel>
+</rss>

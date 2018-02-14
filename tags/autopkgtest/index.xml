@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Autopkgtest on mhcerri: random notes</title>
+    <link>https://mhcerri.github.io/tags/autopkgtest/</link>
+    <description>Recent content in Autopkgtest on mhcerri: random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
+    <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
+    <lastBuildDate>Wed, 13 Dec 2017 15:39:52 -0200</lastBuildDate>
+    
+	<atom:link href="https://mhcerri.github.io/tags/autopkgtest/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Testing with autopkgtest</title>
+      <link>https://mhcerri.github.io/posts/autopkgtest/</link>
+      <pubDate>Wed, 13 Dec 2017 15:39:52 -0200</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/autopkgtest/</guid>
+      <description>From apt show autopkgtest:
+Package: autopkgtest ... Description: automatic as-installed testing for Debian packages autopkgtest runs tests on binary packages. The tests are run on the package as installed on a testbed system (which may be found via a virtualisation or containment system). The tests are expected to be supplied in the corresponding Debian source package. . See adt-run(1) and /usr/share/doc/autopkgtest. Depending on which virtualization server you want to use, you need to install additional packages (schroot, lxc, lxd, or qemu-system) .</description>
+    </item>
+    
+  </channel>
+</rss>
