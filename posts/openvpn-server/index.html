@@ -348,6 +348,9 @@ blockquote {
     margin: 0px 20px;
     padding: 1px 20px;
 }
+blockquote code {
+    background-color: #e6e6b8 !important;
+}
 </style>
 
 </head>
@@ -513,7 +516,7 @@ cp pki/issued/&quot;$SERVER.crt&quot; /etc/openvpn/server/
 # Client:
 cp ../&quot;$CLIENT&quot;/pki/reqs/*.req .
 easyrsa import-req &quot;$CLIENT.req&quot; &quot;$CLIENT&quot;
-easyrsa sign-req server &quot;$CLIENT&quot;
+easyrsa sign-req client &quot;$CLIENT&quot;
 mkdir ../&quot;$CLIENT&quot;/pki/signed
 cp pki/issued/&quot;$CLIENT.crt&quot; ../&quot;$CLIENT&quot;/pki/signed/
 </code></pre>
