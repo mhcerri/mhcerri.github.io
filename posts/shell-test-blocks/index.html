@@ -3,8 +3,8 @@
 <head>
   
   <meta charset="utf-8">
-  <title>Scala</title>
-  <meta name="description" content="Scala">
+  <title>Shell Test Blocks</title>
+  <meta name="description" content="Shell Test Blocks">
   <meta name="author" content="Marcelo Henrique Cerri">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -336,8 +336,6 @@ body {
 
   
   
-  <link href="https://mhcerri.github.io/tags/scala/index.xml" rel="alternate" type="application/rss+xml" title="mhcerri: random notes Feed" />
-  
 
   <meta name="generator" content="Hugo 0.37-DEV" />
 
@@ -404,30 +402,178 @@ table tr:nth-child(2n) {
 </div>
 
 
-
 <div class="pure-g">
   <div class="pure-u-1-24 pure-u-md-1-6"></div>
   <div class="pure-u-11-12 pure-u-md-2-3">
-    <div class="post-content">
-      <p class="posts-name">Scala:</p>
+    <div class="post">
 
-      <ul class="posts">
+      <div class="post-title">
+        <p class="footnote">
+        <time class="">02-21-2018</time>
         
         
         
-        <li>
-          
-          <a class="post-list" href="https://mhcerri.github.io/posts/writing-scala-programs-with-intellij-idea/">Writing Scala programs with IntelliJ Idea</a>
 
-          <p class="footnote">
-          <time datetime="08-04-2015">
-            08-04-2015
-          </time>
-          </p>
-        </li>
         
+
         
-      </ul>
+        </p>
+        <h1>Shell Test Blocks</h1>
+      </div>
+
+      <div class="post-content">
+        
+
+<p><code>[</code> is defined by the POSIX standard and thus it&rsquo;s supported by all POSIX
+shells. On the other hand, although <code>[[</code> is more powerful it only works with
+bash, zsh and ksh.</p>
+
+<blockquote>
+<p>Initially <code>[</code> was implemented as a command (<code>/usr/bin/[</code>). Because of
+that, the expression needs to be surrounded by spaces: <code>[ expr ]</code>
+and <code>[[ expr ]]</code>.</p>
+</blockquote>
+
+<h2 id="differences">Differences</h2>
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th><code>[ ... ]</code> old style</th>
+<th><code>[[ ... ]]</code> new style</th>
+<th>Comments</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Variable expansion</td>
+<td><code>&quot;$v&quot;</code></td>
+<td><code>$v</code></td>
+<td>New style will not split the variable if it contains spaces.</td>
+</tr>
+
+<tr>
+<td>String comparison</td>
+<td><code>=</code></td>
+<td><code>=</code> or <code>==</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td><code>!=</code></td>
+<td><code>!=</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td><code>\&gt;</code> and <code>\&lt;</code></td>
+<td><code>&gt;</code> and <code>&lt;</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Integer comparison</td>
+<td><code>-ge</code>, <code>-le</code>, <code>-eq</code></td>
+<td><code>-gt</code>, <code>-lt</code>, <code>-eq</code></td>
+<td>No differences.</td>
+</tr>
+
+<tr>
+<td></td>
+<td><code>-gt</code>, <code>-lt</code>, <code>-ne</code></td>
+<td><code>-gt</code>, <code>-lt</code>, <code>-eq</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Logical operators</td>
+<td>Deprecated by POSIX</td>
+<td><code>&amp;&amp;</code> and ||</td>
+<td>See below.</td>
+</tr>
+
+<tr>
+<td>Grouping</td>
+<td>Deprecated by POSIX</td>
+<td><code>(</code> and <code>)</code></td>
+<td>See below.</td>
+</tr>
+
+<tr>
+<td>Glob matching</td>
+<td>Not available</td>
+<td><code>[[ $v == *.txt ]]</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Regex matching</td>
+<td>Not available</td>
+<td><code>[[ $v =~ .*\.txt ]]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>POSIX deprecates <code>-a</code>, <code>-o</code>, <code>\(</code> and <code>\)</code>. So instead of using:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -f file1 -a <span style="color:#ae81ff">\(</span> <span style="color:#e6db74">&#34;</span>$var1<span style="color:#e6db74">&#34;</span> -eq <span style="color:#ae81ff">0</span> -i <span style="color:#e6db74">&#34;</span>$var2<span style="color:#e6db74">&#34;</span> -eq <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">\)</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+	echo true
+<span style="color:#66d9ef">fi</span></code></pre></div>
+<p>It&rsquo;s necessary to use:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -f file1 <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">{</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$var1<span style="color:#e6db74">&#34;</span> -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span> <span style="color:#f92672">||</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$var2<span style="color:#e6db74">&#34;</span> -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#f92672">}</span>; <span style="color:#66d9ef">then</span>
+	echo true
+<span style="color:#66d9ef">fi</span></code></pre></div>
+<p>While that could be written in the following way with <code>[[</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -f file <span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span> $var1 -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> $var2 -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">)</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+	echo true
+<span style="color:#66d9ef">fi</span></code></pre></div>
+<blockquote>
+<p>Besides the differences above, <code>[</code> might also lack the following operators
+depending on the implementation: <code>-e</code>, <code>-nt</code> (newer than), <code>-ot</code> (older than),
+<code>-ef</code> (exact same file) and <code>!</code> (not).</p>
+</blockquote>
+
+<h2 id="arithmetic-expansion">Arithmetic Expansion</h2>
+
+<p><code>(( ... ))</code> and <code>$(( ... ))</code> can be used for integer comparison and arithmetic
+operations.</p>
+
+<p>Examples:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># POSIX sh
+</span><span style="color:#75715e"></span>i<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span>j <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span><span style="color:#66d9ef">))</span>
+lvcreate -L <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$((</span><span style="color:#ae81ff">24</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span><span style="color:#66d9ef">))</span><span style="color:#e6db74">&#34;</span> -n lv99 vg99
+q<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span><span style="color:#ae81ff">29</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">6</span><span style="color:#66d9ef">))</span> r<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span><span style="color:#ae81ff">29</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">6</span><span style="color:#66d9ef">))</span>
+<span style="color:#66d9ef">if</span> test <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$((</span>a%4<span style="color:#66d9ef">))</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">then</span> echo <span style="color:#e6db74">&#34;true&#34;</span>; <span style="color:#66d9ef">fi</span>
+
+<span style="color:#75715e"># Bash
+</span><span style="color:#75715e"></span><span style="color:#f92672">((</span>a<span style="color:#f92672">=</span>$a+7<span style="color:#f92672">))</span>         <span style="color:#75715e"># Add 7 to a
+</span><span style="color:#75715e"></span><span style="color:#f92672">((</span>a <span style="color:#f92672">=</span> a + <span style="color:#ae81ff">7</span><span style="color:#f92672">))</span>      <span style="color:#75715e"># Add 7 to a.  Identical to the previous command.
+</span><span style="color:#75715e"></span><span style="color:#f92672">((</span>a <span style="color:#f92672">+=</span> <span style="color:#ae81ff">7</span><span style="color:#f92672">))</span>         <span style="color:#75715e"># Add 7 to a.  Identical to the previous command.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span>a &gt; <span style="color:#ae81ff">5</span><span style="color:#f92672">))</span>; <span style="color:#66d9ef">then</span> echo <span style="color:#e6db74">&#34;a is more than 5&#34;</span>; <span style="color:#66d9ef">fi</span>
+
+true; echo <span style="color:#e6db74">&#34;</span>$?<span style="color:#e6db74">&#34;</span>       <span style="color:#75715e"># Writes 0, because a successful command returns 0.
+</span><span style="color:#75715e"></span><span style="color:#f92672">((</span><span style="color:#ae81ff">10</span> &gt; <span style="color:#ae81ff">6</span><span style="color:#f92672">))</span>; echo <span style="color:#e6db74">&#34;</span>$?<span style="color:#e6db74">&#34;</span> <span style="color:#75715e"># Also 0.  An arithmetic command returns 0 for true.
+</span><span style="color:#75715e"></span>echo <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$((</span><span style="color:#ae81ff">10</span> &gt; <span style="color:#ae81ff">6</span><span style="color:#66d9ef">))</span><span style="color:#e6db74">&#34;</span>    <span style="color:#75715e"># Writes 1.  An arithmetic expression evaluates to 1 for true.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">for</span> <span style="color:#f92672">((</span>i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, j<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i&lt;<span style="color:#ae81ff">100</span>; i++, j<span style="color:#f92672">+=</span><span style="color:#ae81ff">5</span><span style="color:#f92672">))</span>; <span style="color:#66d9ef">do</span> echo <span style="color:#e6db74">&#34;</span>$i<span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">done</span></code></pre></div>
+<blockquote>
+<p>Unlike <code>[</code> and <code>[[</code>, expressions do not need to be surrounded by spaces with
+<code>$((expr))</code> and <code>((expr))</code>.</p>
+</blockquote>
+
+<h2 id="references">References</h2>
+
+<ol>
+<li><a href="http://mywiki.wooledge.org/BashFAQ/031">http://mywiki.wooledge.org/BashFAQ/031</a></li>
+<li><a href="http://mywiki.wooledge.org/ArithmeticExpression">http://mywiki.wooledge.org/ArithmeticExpression</a></li>
+</ol>
+
+      </div>
     </div>
   </div>
   <div class="pure-u-1-24 pure-u-md-1-6"></div>
@@ -459,7 +605,7 @@ table tr:nth-child(2n) {
 
         </ul>
         <a href="#" class="pure-menu-link pull-right" id="gototop-btn">↑↑</a>
-        <a href="https://mhcerri.github.io/tags/scala/index.xml" class="pure-menu-link pull-right">RSS</a>
+        <a href="" class="pure-menu-link pull-right">RSS</a>
       </div>
       
     </div>

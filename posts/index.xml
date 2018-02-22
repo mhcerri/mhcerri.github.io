@@ -8,10 +8,21 @@
     <language>en-us</language>
     <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
     <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
-    <lastBuildDate>Sun, 11 Feb 2018 18:31:20 -0200</lastBuildDate>
+    <lastBuildDate>Wed, 21 Feb 2018 14:40:48 -0300</lastBuildDate>
     
 	<atom:link href="https://mhcerri.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shell Test Blocks</title>
+      <link>https://mhcerri.github.io/posts/shell-test-blocks/</link>
+      <pubDate>Wed, 21 Feb 2018 14:40:48 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/shell-test-blocks/</guid>
+      <description>[ is defined by the POSIX standard and thus it&amp;rsquo;s supported by all POSIX shells. On the other hand, although [[ is more powerful it only works with bash, zsh and ksh.
+ Initially [ was implemented as a command (/usr/bin/[). Because of that, the expression needs to be surrounded by spaces: [ expr ] and [[ expr ]].
+ Differences    Feature [ ... ] old style [[ .</description>
+    </item>
     
     <item>
       <title>Setting up an OpenVPN server</title>

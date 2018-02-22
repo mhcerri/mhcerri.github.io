@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mhcerri.github.io/posts/shell-test-blocks/</loc>
+    <lastmod>2018-02-21T14:40:48-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mhcerri.github.io/about/</loc>
     <lastmod>2018-02-14T00:43:54-02:00</lastmod>
   </url>
@@ -464,7 +469,7 @@
   
   <url>
     <loc>https://mhcerri.github.io/posts/</loc>
-    <lastmod>2018-02-11T18:31:20-02:00</lastmod>
+    <lastmod>2018-02-21T14:40:48-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -590,7 +595,7 @@
   
   <url>
     <loc>https://mhcerri.github.io/</loc>
-    <lastmod>2018-02-14T00:43:54-02:00</lastmod>
+    <lastmod>2018-02-21T14:40:48-03:00</lastmod>
     <priority>0</priority>
   </url>
   
