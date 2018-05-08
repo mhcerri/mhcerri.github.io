@@ -8,10 +8,21 @@
     <language>en-us</language>
     <managingEditor>mhcerri at gmail dot com (Marcelo Henrique Cerri)</managingEditor>
     <webMaster>mhcerri at gmail dot com (Marcelo Henrique Cerri)</webMaster>
-    <lastBuildDate>Wed, 21 Feb 2018 14:40:48 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 08 May 2018 10:03:09 -0300</lastBuildDate>
     
 	<atom:link href="https://mhcerri.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Managing Golang Dependencies With Wgo</title>
+      <link>https://mhcerri.github.io/posts/golang-dependencies-with-wgo/</link>
+      <pubDate>Tue, 08 May 2018 10:03:09 -0300</pubDate>
+      <author>mhcerri at gmail dot com (Marcelo Henrique Cerri)</author>
+      <guid>https://mhcerri.github.io/posts/golang-dependencies-with-wgo/</guid>
+      <description>Simple way to handle dependencies for golang:
+Typical use
+$ mkdir myproject $ cd myproject $ wgo init $ wgo get github.com/someone/dep $ ls -a .gocfg src vendor $ mkdir src/myproj $ emacs src/myproj/main.go ... import &amp;quot;github.com/someone/dep&amp;quot; $ wgo install myproj $ ./bin/myproj it works! $ git init ###$ wgo save &amp;gt; .gitignore ### Or instead: echo &#39;/vendor&#39; &amp;gt;&amp;gt; .gitignore $ git add .gocfg .gitignore src/myproj $ git remote add origin https://foo.</description>
+    </item>
     
     <item>
       <title>Shell Test Blocks</title>
